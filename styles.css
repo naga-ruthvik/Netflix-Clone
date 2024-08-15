@@ -1,0 +1,734 @@
+*{  
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+    /* max-width: 100%;     */
+    
+}
+body{
+    width: 100%;
+    max-width: 100%;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;   
+    
+}
+
+.header{
+    
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-size:cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative; 
+   
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+nav .logo{
+    width: 150px;
+    height:auto;
+    cursor: pointer;
+}
+
+nav .button .lang{
+    font-size: medium;
+    display: flexbox;
+    align-items: center;
+    justify-content:space-evenly;
+    border: 1px solid gray;
+    padding:7px 36px;
+    background-color: rgba(0,0,0,0.25);
+    color: white;
+    border-radius : 4px;
+    outline:none;
+    margin:12px;
+    cursor: pointer;
+}
+nav .button .lang{
+    border: 1px solid gray; /* Default border is transparent */
+  transition: border-color 0.2s ease;
+}
+nav .button .lang:active {
+    border: 1px solid white;
+     /* Adds visible border on active state */
+  }
+nav .button .lang .icon{
+    width: 10px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
+nav .button .sign{
+    background-color: #E50914;
+    padding:7px 6px;
+    border-radius: 4px;
+    border:none;
+    color:white;
+    font-size: medium;
+    font-weight: 540;
+    cursor: pointer;
+}
+
+nav .button .sign:hover{
+    background-color: #ba0710;
+}
+
+.content {
+    position:absolute;
+    left: 20%;
+    right: 20%;
+    margin-top: 12rem;
+    text-align: center;
+    
+}
+
+.content h1{
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 80px;
+    width:100%;
+    
+    
+}
+
+.content h3{
+    font-size: 27px;
+    font-weight: 200;
+    line-height: 50px;
+}
+
+.content p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.content form{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 16px;
+}
+.content form .email{
+    color: white;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 55px;
+    padding: 20px 20px;
+    border: 1px solid gray  ;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    outline: none;
+    border-radius: 4px;
+    align-items:start;
+    justify-content:start;
+    font-weight: 550;
+    font-size: 15px;
+    margin-right: 8px;
+   
+}
+
+.content form button{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 55px;
+    background-color: #E50914;
+    border:none;
+    border-radius: 4px;
+    color: white;
+    font-size:25px;
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+
+.content form button:hover{
+    background-color: #ba0710;
+}
+
+
+.feat{
+    padding: 50px 12%;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    width:100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+
+}
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding-right: 0px;
+}
+
+.text h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+.text p{
+    margin-top: 15px;
+    font-size:x-large;
+    width: 100%;
+}
+.image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.image img{
+    display: block;
+    width: 90%;
+    height: auto;
+}
+
+.sep {
+    width: 100vw; /* Full viewport width */
+    height: 8px; /* Adjust thickness */
+   
+    background-color: rgb(48, 48, 48);
+    margin-left: calc(-50vw + 50%); 
+    margin-right: calc(-50vw + 50%);
+    overflow-x: hidden;
+    /* Adjust spacing as needed */
+}
+
+
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    position: relative;
+    top: 80px;
+    right: 7%;
+    
+    
+}
+.content{
+    display: flex-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-rows{
+    display: flex;
+    
+}
+
+ul{
+    list-style: none;
+    margin-right: 7rem;
+}
+
+li{
+    text-align: left;
+    margin-bottom: 17px;
+    white-space: nowrap;
+}
+
+.content .que{
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px ;
+    font-size: large;
+    font-weight:500;
+    color: #676767;
+    position: relative;
+    bottom: 20px;
+}
+
+.lang-bot{
+    position:relative;
+    right: 44%;
+    
+}
+
+.lang-bot{
+    font-size: medium;
+    display: flexbox;
+    align-items: center;
+    justify-content:space-evenly;
+    border: 1px solid gray;
+    padding:7px 20px;
+    background-color: rgba(0,0,0,0.25);
+    color: white;
+    border-radius : 4px;
+    outline:none;
+    margin:20px;
+    cursor: pointer;
+}
+
+.lang-bot{
+    border: 1px solid gray; /* Default border is transparent */
+  transition: border-color 0.2s ease;
+}
+
+.lang-bot:active {
+    border: 1px solid white;
+     /* Adds visible border on active state */
+  }
+
+.lang-bot .icon{
+    width: 10px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
+
+a{
+    color: #676767;
+}
+
+.copyright{
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: large;
+    font-weight:500;
+    color: #676767;
+    position: relative;
+    top: 10px;
+}
+
+.que span{
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 800;
+    font-size: xxx-large;
+    /* text-align: center; */
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    
+}
+
+.accordion li{
+    list-style: none;
+    width:100%;
+    
+    
+    
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 600px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+    white-space: normal;  
+    text-align: left;   
+    margin-top: -10px; 
+}
+
+.accordion li label:hover{
+    background:#3b3b3b ;
+}
+
+label::after{
+    content: '+';
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5sec;
+
+}
+
+
+
+.accordion [type="radio"]{
+   display:none;
+}
+
+
+.content-faq{
+    background: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    white-space: normal;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.2s;
+    margin-top: 1.5px;
+    font-size: 25px;
+}
+
+.accordion input[type="radio"]:checked + label + .content-faq{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked +label::after{
+    transform: rotate(135deg ) ;
+}
+
+.faq-bottom p{
+    margin-bottom:20px;
+    font-size: larger;
+}
+
+.faq-button .email{
+    color: white;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 55px;
+    padding: 20px 20px;
+    border: 1px solid gray  ;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    outline: none;
+    border-radius: 4px;
+    align-items:start;
+    justify-content:start;
+    font-weight: 550;
+    font-size: 15px;
+    margin-right: 8px;
+   
+}
+.faq-button form button{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 55px;
+    background-color: #E50914;
+    border:none;
+    border-radius: 4px;
+    color: white;
+    font-size:25px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+.faq-button form button:hover{
+    background-color: #ba0710;
+}
+
+.faq-button{
+    margin-bottom: 70px;
+}
+
+
+
+/* media Quieries */
+
+@media only screen and (max-width:760px){
+
+    
+    .header{
+    height: 90vh;
+    
+}
+
+    nav .logo{
+        width: 100px;
+    }
+
+    nav .button .lang{
+        padding: 7px 6px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .content{
+        margin-top: 50px;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        
+
+        
+    }
+    .content h1{
+        font-size: 27px;
+        font-weight: 800;
+        line-height: 1.2;
+        text-align: center;
+       
+    }
+
+    .content p{
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 0px;
+        
+    }
+
+    .content h3{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.2;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .content form{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.content form .email{
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+.content form button{
+    max-width: 180px;
+    height: 50px;
+    font-size:20px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.banner .image img{
+    width: 100%;
+    height: auto;
+}
+
+.banner:nth-of-type(odd){
+    padding-top: 50px;
+}
+.banner:nth-of-type(odd) .text {
+    order: 1;/* Text comes first */
+}
+
+.banner:nth-of-type(odd) .image {
+    order: 2; /* Image comes second */
+}
+
+.text h2{
+    font-size: 28px;
+}
+
+.text p{
+    font-size: 15px;
+}
+
+
+.faq h2{
+    font-weight: 750;
+    font-size: xx-large;
+}
+
+.accordion li label {
+    padding: 19px;
+    font-size: 18px;
+    font-weight: 400;    
+    
+}
+
+.faq{
+    padding: 0px 8%;
+
+}
+
+.content-faq{
+
+    font-size: 18px;
+}
+
+.faq-bottom p{
+    margin-bottom:15px;
+    font-size: large;
+}
+
+
+.faq-button .email{
+    display: inline-block;
+    width: 90%;
+    height: 53px;
+}
+.faq-button form button{
+    width: 50%;
+    height: 50px;
+    font-size:20px;
+    padding-bottom: 0px;
+    top: 10px;
+}
+
+
+.faq-button{
+    margin-bottom: 60px;
+}
+
+
+.footer {
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+}
+
+.content {
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: flex-start;
+    margin-top: 0%;
+}
+
+.cont-rows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.content .que {
+    font-size: medium;
+    margin-bottom: 30px;
+    text-align: left;
+    bottom: 0;
+}
+
+.lang-bot {
+   
+    font-size: small;
+    padding: 9px 15px;
+    margin: 10px 0;
+    position: relative;
+    left:-32%;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.lang-bot .icon {
+    width: 8px;
+    margin-left: 5px;
+}
+
+.copyright {
+    font-size: medium;
+    text-align: left;
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width: 760px) and (max-width: 1100px){
+   
+   
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        top: -100%;
+        right: 12%;
+        margin-top: -10px;
+    }
+    
+    .content {
+        flex-direction: column;
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+    
+    .cont-rows {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 12%;
+        margin-bottom: 25px;
+    }
+    
+    ul {
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    .content .que {
+        font-size: medium;
+        margin-bottom: 30px;
+        text-align: left;
+        bottom: 0;
+    }
+    
+    .lang-bot {
+       
+        font-size: small;
+        padding: 9px 15px;
+        margin: 10px 0;
+        position: relative;
+        left:-40%;
+        justify-content: flex-start;
+        align-items:flex-start;
+    }
+    
+    .lang-bot .icon {
+        width: 8px;
+        margin-left: 5px;
+    }
+    
+    .copyright {
+        font-size: medium;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        margin-top: 4rem;
+        text-align: center;
+    }
+}
